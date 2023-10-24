@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
         bundle.putIntArray(IMAGES_KEY, imageArray)
         fragment.arguments = bundle
 
-        if(supportFragmentManager.findFragmentById(R.id.fragmentContainerView) !is ImageDisplayFragment)
-            supportFragmentManager
-                .beginTransaction()
-                .add(R.id.fragmentContainerView, fragment)
-                .addToBackStack(null)
-                .setReorderingAllowed(true)
-                .commit()
+//        if(supportFragmentManager.findFragmentById(R.id.fragmentContainerView) !is ImageDisplayFragment)
+//            supportFragmentManager
+//                .beginTransaction()
+//                .add(R.id.fragmentContainerView, fragment)
+//                .addToBackStack(null)
+//                .setReorderingAllowed(true)
+//                .commit()
     }
 }
