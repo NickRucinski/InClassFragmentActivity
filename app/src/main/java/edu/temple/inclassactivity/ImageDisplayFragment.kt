@@ -50,7 +50,7 @@ class ImageDisplayFragment : Fragment() {
 
         val _adapter = CustomRecyclerAdapter(_images)
         view?.run{
-            (view as RecyclerView).adapter =_adapter
+            (this as RecyclerView).adapter =_adapter
         }
     }
 
