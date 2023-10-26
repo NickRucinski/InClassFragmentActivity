@@ -19,10 +19,7 @@ class MainActivity : AppCompatActivity() {
         typedArray.recycle()
 
         // Attach an instance of ImageDisplayFragment using factory method
-        button.setOnClickListener(){
-            (supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as ImageDisplayFragment).setImages(imageArray)
-        }
-
+        imagesViewModel.setImages(imageArray)
 
 
 //        val bundle = Bundle()
